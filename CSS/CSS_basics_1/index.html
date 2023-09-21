@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Internal CSS -->
+    <style>
+        /* Element Selector */
+        p {
+            color: red;
+            font-size: large;
+        }
+
+        /* #ID Selector */
+        #developer {
+            color: blueviolet;
+            font-size: x-large;
+            background-color: bisque;
+        }
+
+        table {
+            border: 2px solid black;
+        }
+
+        /* .class Selector */
+        .hi {
+            border: 1px solid red;
+            font-weight: bold;
+            font-size: larger;
+        }
+
+        /* Pseduo Selector */
+        #first:hover {
+            color: green;
+        }
+
+        /* Multiple Selector */
+        table,
+        tr,
+        td {
+            border: 2px solid black;
+        }
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Inline CSS -->
+    <p style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">This is my first paragraph</p>
+    <p id="developer">I want to be best remote developer</p>
+    <br>
+    <table>
+        <tr>
+            <td class="hi">Hello</td>
+            <td class="hi">World</td>
+        </tr>
+        <tr>
+            <td class="dev">Remote</td>
+            <td>Job</td>
+        </tr>
+    </table>
+    <br>
+    <button id="first">Submit</button>
+
+</body>
+
+</html>
