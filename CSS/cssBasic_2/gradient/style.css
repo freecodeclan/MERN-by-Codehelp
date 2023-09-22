@@ -1,0 +1,29 @@
+/* LinearGradient */
+.box {
+  border: 2px solid black;
+  height: 200px;
+  width: 150px;
+  margin: 5px;
+  background-image: linear-gradient(yellow, green);
+  background-image: linear-gradient(to right, yellow, green);
+  background-image: linear-gradient(to left, yellow, green);
+  background-image: linear-gradient(to bottom right, yellow, green, pink);
+}
+
+/* RadialGradient */
+.mydiv {
+  border: 2px solid black;
+  height: 300px;
+  width: 300px;
+  margin: 5px;
+  background-image: radial-gradient(orange, white, green);
+  background-image: radial-gradient(circle, orange, white, green);
+}
+
+/* Conioc-Gradient */
+.box3 {
+  border: 2px solid black;
+  width: 300px;
+  height: 150px;
+  background-image: conic-gradient(orange, white, green);
+}
