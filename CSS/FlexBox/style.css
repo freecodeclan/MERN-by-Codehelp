@@ -9,7 +9,7 @@
 
   /* flex-flow: nowrap; In flex-flow we can pass both the peoperties together flex-direction and flex-wrap */
 
-  /* We use justify content to align the items according to main Axis*/
+  /* We use justify content to align the items according to main Axis(horizontal)*/
   justify-content: flex-start;
   justify-content: flex-end;
   justify-content: center;
@@ -17,7 +17,7 @@
   justify-content: space-evenly;
   justify-content: space-between;
 
-  /* We use align-item to align the item according to cross Axis*/
+  /* We use align-item to align the item according to cross Axis(vertical)*/
   align-items: flex-start;
   align-items: flex-end;
   align-items: center;
@@ -25,7 +25,7 @@
   align-items: baseline;
   /* gap: 10px; */
 
-  /*we use align-content to handle the space between multiplke rows*/
+  /*we use align-content to handle the space between multiple rows*/
   align-content: flex-start;
   align-content: flex-end;
   align-content: center;
@@ -37,4 +37,18 @@
   border: 1px solid brown;
   background-color: bisque;
   width: 100px;
+}
+
+/* Flex-item Properties */
+#b1 {
+  /* To change the ordering of the flex items */
+  order: 1;
+}
+
+#b2 {
+  /* flex-grow: 1; */
+  align-self: stretch;
+}
+#b3 {
+  /* flex-shrink: 2; */
 }
