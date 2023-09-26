@@ -1,0 +1,39 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#wrapper {
+  height: 100vh;
+  overflow-x: hidden; /*overflow stop scrolling to the right*/
+  overflow-y: auto;
+  perspective: 10px; /*perspective property is used to active 3D Transformation*/
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  height: 100%;
+  z-index: -1;
+}
+
+.background {
+  transform: translateZ(-40px) scale(5);
+}
+
+.foreground {
+  transform: translateZ(-20px) scale(3);
+}
+
+.background,
+.foreground {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
