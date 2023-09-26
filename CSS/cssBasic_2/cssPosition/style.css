@@ -1,0 +1,21 @@
+.box {
+  border: 1px solid black;
+  height: 200px;
+  width: 200px;
+  background-color: antiquewhite;
+  display: block;
+}
+
+.wrapper {
+  height: 1000px;
+  width: 100vw;
+  background-color: yellow;
+}
+
+/* #b3 {
+  position: absolute;
+}
+
+#b2 {
+  position: fixed;
+} */
