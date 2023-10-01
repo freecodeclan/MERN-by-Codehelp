@@ -11,16 +11,22 @@
   display: grid; /*Converting container into grid */
 
   /* grid-template-row and grid-template-columns used to create rows and columns in grid */
-  grid-template-rows: 30px 500px 30px;
+  /* grid-template-rows: 30px 500px 30px;
   grid-template-columns: 200px 400px;
-  grid-gap: 5px; /* creating gap between grid columns and rows */
+  grid-gap: 5px; creating gap between grid columns and rows */
+
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 250px 600px;
 
   /* Using grid-template-area for naming rows */
 
   grid-template-areas:
-    'hd hd' /* we named "hd hd" to the two columns in first row */
-    'side main' /* we named "side main" to the two columns in second row */
-    'ft ft'; /* we named "ft ft" to the two columns in third row */
+    "hd hd hd hd hd hd hd hd"
+    "side side side main main main main main "
+    "ft ft ft ft ft ft ft ft";
+  /*'hd hd'     /* we named "hd hd" to the two columns in first row */
+  /*'side main' /* we named "side main" to the two columns in second row */
+  /*'ft ft';    /* we named "ft ft" to the two columns in third row */
 
   /* grid-template-areas:
     'hd'
