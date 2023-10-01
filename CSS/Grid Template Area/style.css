@@ -1,0 +1,53 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 700px;
+  border: 1px soild red;
+  background-color: yellow;
+  display: grid; /*Converting container into grid */
+
+  /* grid-template-row and grid-template-columns used to create rows and columns in grid */
+  grid-template-rows: 30px 500px 30px;
+  grid-template-columns: 200px 400px;
+  grid-gap: 5px; /* creating gap between grid columns and rows */
+
+  /* Using grid-template-area for naming rows */
+
+  grid-template-areas:
+    'hd hd' /* we named "hd hd" to the two columns in first row */
+    'side main' /* we named "side main" to the two columns in second row */
+    'ft ft'; /* we named "ft ft" to the two columns in third row */
+
+  /* grid-template-areas:
+    'hd'
+    'side'
+    'main'
+    'ft'; */
+}
+
+.box {
+  border: 1px solid green;
+  background-color: antiquewhite;
+  /* height: 100px;
+    width: 100px; */
+}
+
+#h1 {
+  grid-area: hd; /* This is header section*/
+}
+
+#f1 {
+  grid-area: ft; /* ZThis is footer section*/
+}
+
+#s1 {
+  grid-area: side; /* This is side bar*/
+}
+
+#c1 {
+  grid-area: main; /*This is content area*/
+}
