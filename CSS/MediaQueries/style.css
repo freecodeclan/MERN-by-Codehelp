@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 2px solid black;
+  background-color: bisque;
+  height: 700px;
+  width: 510px;
+
+  display: grid;
+  grid-template-rows: 30px 1fr 30px;
+  grid-template-columns: 100px 400px;
+  grid-gap: 5px;
+
+  grid-template-areas:
+    "hd hd"
+    "side main"
+    "ft ft";
+}
+
+.box {
+  border: 2px solid black;
+  background-color: #d7e5ca;
+}
+
+#head {
+  grid-area: hd;
+}
+
+#side {
+  grid-area: side;
+}
+
+#text {
+  grid-area: main;
+}
+
+#foot {
+  grid-area: ft;
+}
+
+/* Best practice is add Media Queries always in last in CSS sheet */
+
+/* @media (max-width: 400px) {
+  .container {
+    grid-gap: 100px;
+  }
+} */
+
+/* With the help of media queries we use different styles on different screens */
+@media (max-width: 350px) {
+  .container {
+    grid-template-rows: 30px 1fr 1fr 30px;
+    grid-template-columns: 1fr;
+
+    grid-gap: 2px;
+
+    grid-template-areas:
+      "hd"
+      "side"
+      "main"
+      "ft";
+  }
+}
