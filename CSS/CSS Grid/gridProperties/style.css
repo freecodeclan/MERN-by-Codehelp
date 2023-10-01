@@ -10,15 +10,24 @@
   grid-gap: 5px;
 
   /* Grid Properties */
-  justify-content: start;
+
+  /* justify-content: start;
   justify-content: center;
   justify-content: end;
   justify-content: space-around;
   justify-content: space-between;
-  justify-content: space-evenly;
+  justify-content: space-evenly; */
+
+  align-items: start;
+  align-items: end;
+  align-items: baseline;
+  align-items: stretch; /* This is by default property */
 }
 
 .box {
   border: 1px solid red;
   background-color: cyan;
+  /* justify-self: start;
+  justify-self: end; */
+  justify-self: center;
 }
