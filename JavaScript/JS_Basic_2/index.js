@@ -125,7 +125,7 @@ if ('age' in square) {
   console.log('Absent');
 }
 
-/* Object Cloning */
+/* OBJECT CLONING */
 
 //- Using Iteration function
 let src = {
@@ -137,7 +137,7 @@ let src = {
 for (let key in src) {
   console.log(key, src[key]); //- Iterating key & values of src
 }
-let dest = {}; //- Empty Object
+let dest = {}; //-  Creating an Empty Object
 
 for (let key in src) {
   dest[key] = src[key];
