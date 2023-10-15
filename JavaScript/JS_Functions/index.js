@@ -13,7 +13,7 @@ run();
 let skill = function walk() {
   console.log('Walking 🚶‍♂️');
 };
-//--> Invoking function assignment
+//--> Invoking named function assignment
 skill();
 
 //-- Anonymous function assignment
@@ -28,7 +28,7 @@ function sum(a, b) {
   return a + b;
 }
 
-let total = sum(2, 5);
+let total = sum(2, 5, 6, 8, 12);
 
 //--> Dynamic Function where we can give multiple parametrs
 function sum(x, y) {
@@ -43,8 +43,38 @@ let ans = sum(2, 2, 4, 6, 8);
 console.log(ans);
 
 /* REST OPERATOR */
-function sum(...args) {
+function sum(num, ...args) {
   console.log(args);
 }
 
 sum(1, 2, 3, 4, 5);
+
+//- DEFAULT PARAMETER
+function intrest(p, r = 2, y = 2) {
+  return p * r * y;
+}
+console.log(intrest(10, 5));
+
+//--> getter() & setter()
+let person = {
+  fName: 'Harsh',
+  lName: 'Mehra',
+  get fullName() {
+    return `${person.fName} ${person.lName}`;
+  },
+  set fullName(value) {
+    let parts = value.split(' '); //--> split() is used to make parts
+    this.fName = parts[0];
+    this.lName = parts[1];
+  },
+};
+
+person.fullName = 'Juhi Chellani';
+console.log(person.fullName);
+
+//--> Try & Catch (Error Handling)
+try {
+  person.fullName = true;
+} catch (e) {
+  alert('Please enter the string value');
+}
