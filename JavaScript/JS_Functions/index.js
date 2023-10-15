@@ -1,3 +1,5 @@
+'use strict';
+
 /* FUNCTIONS */
 
 // 1--> DECLAREATION
@@ -63,18 +65,39 @@ let person = {
     return `${person.fName} ${person.lName}`;
   },
   set fullName(value) {
+    if (typeof value !== 'string') {
+      throw new Error('You have not sent a string');
+    }
     let parts = value.split(' '); //--> split() is used to make parts
     this.fName = parts[0];
     this.lName = parts[1];
   },
 };
 
-person.fullName = 'Juhi Chellani';
-console.log(person.fullName);
-
 //--> Try & Catch (Error Handling)
 try {
-  person.fullName = true;
+  person.fullName = 'Harsh Mehra';
 } catch (e) {
-  alert('Please enter the string value');
+  console.error(e.message);
 }
+console.log(person.fullName);
+
+//--> SCOPING
+
+// for (let i = 1; i <= 10; i++) {
+//   // console.log(i);
+// }
+
+//--> Reducing an array
+
+let ar = [-1, -2, -3, -4, -5];
+// let add = 0;
+
+// for (let value of ar) {
+//   add += value;
+// }
+// console.log(add);
+let totalSum = ar.reduce(
+  (accumulator, currentValue) => accumulator + currentValue
+);
+console.log(totalSum);
