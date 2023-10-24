@@ -29,18 +29,17 @@ function sum(a, b) {
   console.log(arguments);
   return a + b;
 }
-
 let total = sum(2, 5, 6, 8, 12);
 
 //--> Dynamic Function where we can give multiple parametrs
 function sum(x, y) {
   let total = 0;
+  //--> Used to access the elements inside the arguments
   for (let value of arguments) {
     total += value;
   }
   return total;
 }
-
 let ans = sum(2, 2, 4, 6, 8);
 console.log(ans);
 

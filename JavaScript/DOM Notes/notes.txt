@@ -1,0 +1,41 @@
+# METHOD TO FETCH THE ELEMENTS IN Document Object Model(DOM)
+
+METHOD 1 --> document.getElementByID();
+
+METHOD 2 --> document.getElementsByClass();
+
+METHOD 3 --> document.getElementsByTagName();
+
+METHOD 4 --> $0 
+
+To access $0 first we have to select the element, then create a variable e.g  (let content = $0)
+
+METHOD 5 --> querySelector Method 
+
+To access querySelector method, create variable and then use the method.
+E.g -----> let content = document.querySelector('.className / #idName / elementName');
+
+
+# ADDING NEW ELEMENT / CONTENT USING JS
+
+1---> document.createElement('p') -----> Before adding we always use createElement method to create new content
+
+2---> .appendChild() --------> To add new element into parent class 
+
+
+#  TO CREATE TEXT-NODE
+
+==> new_element.textContent = 'Add content here';  ----> Used to add content inside HTML element
+
+
+#  METHOD FOR POSTIONING ELEMENTS
+
+==>  insertAdjacentHTML(position,text)
+
+But the properties used in postioning are (a) -- beforeBegin   (b) -- afterBegin  (c) -- beforeEnd   (d) -- afterEnd
+
+# METHOD USE TO REMOVE ELEMENT
+
+==> .remove
+
+==> parentNode.removeChild();
