@@ -38,4 +38,4 @@ But the properties used in postioning are (a) -- beforeBegin   (b) -- afterBegin
 
 ==> .remove
 
-==> parentNode.removeChild();
+==> parentNode.removeChild(); 
